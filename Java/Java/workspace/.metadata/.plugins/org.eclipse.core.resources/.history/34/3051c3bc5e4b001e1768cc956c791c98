@@ -1,0 +1,12 @@
+
+public class ListaAtividade1 {	
+	public static void main (String[] args) {
+		int num1,num2, soma;
+		num1 = 19; 
+		num2 = 15; 
+		
+		soma = num1+num2; 
+		System.out.println("A soma de "+num1+"+"+num2+"="+soma);
+		
+	}
+}

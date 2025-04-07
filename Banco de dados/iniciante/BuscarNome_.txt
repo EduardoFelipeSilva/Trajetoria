@@ -1,0 +1,21 @@
+aliases comando AS para dar um apelido
+exibir varias tabelas de uma vez e dar apelido
+
+select customer.CUST_CODE,
+ customer.CUST_NAME,
+ orders.ORD_NUM
+ from customer, orders;
+ou
+select c.CUST_CODE as cod_cliente,
+ customer.CUST_NAME as "se tiver espaço precisa ser em aspas",
+ o.ORD_NUM
+ from customer as c,
+ orders as o
+ Where c.CUST_CODE = o.CUST_CODE;
+
+procurar so com uma parte comando LIKE ai temos % e _
+ST% para se for as primeiras palavras %ST para se termina com essas palavras %ST% vai procurar independer de onder estiver
+_ol__S% para falar que a segunda letra é o _ fala a posição da letra
+select* from customer
+where CUST_NAME like 'ST%'
+

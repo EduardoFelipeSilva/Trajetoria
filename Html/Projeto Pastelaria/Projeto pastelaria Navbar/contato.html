@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Morada do Pastel</title>
+    <link rel ="icon" href="img/altlogo.png"> 
+    <link rel ="steesheet" Href="../Projeto pastelaria aula 1/css/estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  </head>
+  <body>
+  
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="nav-link disabled" aria-disabled="true navbar-brand" href="#"><img src="../Projeto pastelaria aula 1/img/altlogo.png"> </a>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../Projeto pastelaria aula 1/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                
+                <a class="nav-link" href="../Projeto pastelaria aula 1/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">contato</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Digite sua busca..." aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../Projeto pastelaria aula 1/img/caralt3.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../Projeto pastelaria aula 1/img/caralt4.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="../Projeto pastelaria aula 1/img/caralt.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 top" style="transition-delay: 0s; animation-delay: 0s;">
+      
+            <h3>Endereço</h3>
+        </div>
+        <ul class="info">
+            <li>
+              <i class="fa fa-map-marker fa-lg" aria-hidden="true"></i> Av. Ângelo Bolson, 338 | Santa Maria, RS
+                <a onclick="showMap('#mapNiere')" id="mapa">Ver no mapa</a>
+            </li>
+            <li>
+              <i class="fa fa-phone fa-lg" aria-hidden="true"></i>
+                <div class="telefone">3218 1008</div>
+            </li>
+            <li>
+                <span>Para tele-entrega:</span><br>
+              <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i> Segunda a Domingo:<br>Área central - 18:30 hs - 23:30 hs<br>Demais regiões - 18:30 hs - 23:00 hs
+            </li>
+            <li>
+                <span>Para buscar no local:</span><br>
+                <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i> Terça a Domingo: 19:00 hs - 23:50 hs
+            </li>
+        </ul>
+    </div>
+
+    <button type="button" class="btn btn-outline-primary w-5 "><img src="../Projeto pastelaria aula 1/img/face.png" width="50px" > Facebook</button>
+    <button type="button" class="btn btn-outline-danger w-5 "><img src="../Projeto pastelaria aula 1/img/instagram.jpg" width="70px" >Instagram</button>
+    <button type="button" class="btn btn-outline-info w-5 "><img src="../Projeto pastelaria aula 1/img/twitter.jpeg" width="50px" > Twitter</button>
+    <button type="button" class="btn btn-outline-primary w-5 "><img src="../Projeto pastelaria aula 1/img/lk.png" width="50px" > Linkedin</button>
+    <button type="button" class="btn btn-outline-success w-5 "><img src="../Projeto pastelaria aula 1/img/wha.png" width="50px" > Whatsapp</button>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

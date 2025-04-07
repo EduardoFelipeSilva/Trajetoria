@@ -1,0 +1,1 @@
+INDEX VERSION 1.131+E:\ETEC\2 Modulo\DS\Workshop\aula1\.metadata\.plugins\org.eclipse.jdt.core

@@ -1,0 +1,101 @@
+h5 {
+    font-size: 19px;
+    text-align: center;
+}
+p {
+    text-align: justify;
+    text-align: center;
+    font-family: Arial, sans-serif ;
+    color: rgb(4, 37, 25);
+}
+.container{
+    padding-top: 20px;
+}
+
+.endereco{
+    padding-top: 100px;
+    padding-bottom: 55px;
+}
+#edd{
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+}
+
+body{
+    background-color: #E6E6FA;
+}
+.navbar{
+    background: rgb(156,228,142);
+background: radial-gradient(circle, rgba(156,228,142,0.639093137254902) 3%, rgba(117,189,109,0.639093137254902) 48%, rgba(114,184,120,0.8715861344537815) 96%);
+}
+
+
+.footer{
+    background: rgb(156,228,142);
+    background: radial-gradient(circle, rgba(156,228,142,0.639093137254902) 3%, rgba(117,189,109,0.639093137254902) 48%, rgba(114,184,120,0.8715861344537815) 96%)
+}
+
+.far {
+    padding-left: 5px;
+}
+.fas {
+    padding-left: 5px;
+}
+.inputs {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        margin-bottom: 5px;
+        margin: 0 auto;
+        width: 500px;
+    }
+
+h6 {
+    font-size: 16px;
+    color:rgb(144, 99, 185)
+}
+
+h1 {
+    font-size: 20px;
+    color:white;
+}
+h4 {
+    font-size: 40px;
+    text-align: center;
+    color:rgb(70, 187, 142);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.foto {
+    padding-top: 50px;
+    text-align: center;
+}
+.historia {
+    padding-left: 100px;
+    padding-top: 150px;
+    text-align: justify;
+    
+}
+.pasteis {
+    padding-right: 150px;
+    padding-top: 150px;
+    text-align: justify;
+}
+
+ .baba {
+    padding-left: 25px;
+ }
+
+ #centrocarrossel {
+    display: flex;
+    justify-content: center;
+ }
+ h7 {
+    font-size: 45px;
+    color:rgb(52, 129, 71);
+    font-family: 'Times New Roman', Times, serif;
+ }
+.equipe{
+    padding-bottom: 50px;
+}

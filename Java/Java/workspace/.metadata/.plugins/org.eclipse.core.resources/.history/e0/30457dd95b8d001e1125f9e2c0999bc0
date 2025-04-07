@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class inversao {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner (System.in);
+		
+		final int TAM = 5; 
+		
+		int a[], b[], i,j;
+		
+		a= new int [TAM];
+		b= new int [TAM];
+		
+		for (i=0; i<TAM; i++) { 
+			System.out.println("Digite o "+(i+1)+" valor:");
+			a[i] = in.nextInt(); 
+			
+		}
+		
+		System.out.print("\nB[] = [");
+		for (j=0; j<TAM; j++) {
+			b[j] = a[i]; 
+			System.out.print(b[j]+ " ");
+		}
+		System.out.print("]");
+	}
+
+}

@@ -1,0 +1,24 @@
+
+
+body{
+
+    background-image:  url("../Imagens/Terror.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+table{
+
+    background-image:  url("../Imagens/Tabelas.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+td {
+    font-size: 20px;
+    font-style: garamond;
+}
+th{
+    font-size: 20px;
+    font-style: garamond;
+}

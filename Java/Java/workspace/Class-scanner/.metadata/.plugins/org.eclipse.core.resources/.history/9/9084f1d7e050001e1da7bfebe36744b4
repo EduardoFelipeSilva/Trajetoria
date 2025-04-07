@@ -1,0 +1,9 @@
+ import java.util.Scanner; 
+public class ProgramaIdade {
+	public static void main(String[] args) {
+Scanner ler = new Scanner(System.in);
+int aA, aN, i;
+System.out.println("Digite o ano atual:");
+aA = ler.nextint();
+	}
+}

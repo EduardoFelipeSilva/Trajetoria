@@ -1,0 +1,9 @@
+INDEX VERSION 1.131+E:\ETEC\PA\Aula - Java\workspace\.metadata\.plugins\org.eclipse.jdt.core
+2544411675.index
+1865797976.index
+2427934853.index
+3430468559.index
+2524174724.index
+2430929649.index
+2048760315.index
+2400158965.index
