@@ -1,0 +1,85 @@
+Etec - D.S. - D.S Anotações. 
+
+° Programação Orientada a Objetos. 
+
+1| Modelagem. 
+
+
+--------------------------------------------------
+2| Hereança.
+
+(parametro) diferente de (Herança). 
+Para usar herança, é preciso parenteses. Ex: 
+
+
+ classe FiguraGeometrica: 
+		
+	def calculeArea (self): 
+		print ("calcule area") 
+--------------------------------------------------
+#main
+
+	from figurageometrica import FiguraGeometrica
+		class Retangulo(FiguraGeometrica): 
+
+		def CalcularArea(Self): 
+			print("calcule area de novo)
+
+--------------------------------------------------
+#main 
+
+	from figurageometrica import FiguraGeometrica
+	from Retangulo import (FiguraGeometrica):
+
+	//criando um objeto//instanciando um objeto. 
+
+	figurageometrica = FiguraGeometrica()
+	figurageometrica.calculararea
+
+	retangulo = Retangulo() 
+	retangulo.figurageometrica 
+	
+
+(vai imprimir a herença crianda em FiguraGometrica. Quando subescrevemos, será impresso a alteração na classe Retangulo) 
+--------------------------------------------------
+3| Subescrever. 
+
+reescrever um metodo. Dar uma nova forma ao metodo, alterando um comporatmento da classse base (classe origem). 
+Se não houver uma herança, não poderá haver um subescrever. Ex: 
+
+from FiguraGeometrica import FiguraGeometrica
+		class Retangulo(FiguraGeometrica): 
+		*print("areaRetangulo")*  
+
+--------------------------------------------------
+4| Abstrato. 
+
+Uma classe que não pode ser instanciada,não faz ser te um objeto, osomente poderá ser herdada. Gerealmente é uma super classe (classe origem). Ex: 
+
+
+from abc omport ABCMeta, abstractmehood
+
+classe FiguraGeometrica(metaclass=ABCMeta): 
+
+	@abstratcmehood 		
+	def calculeArea (self): 
+		print ("calcule area") 
+		pass
+
+--------------------------------------------------
+5| Polimorfismo. 
+
+Tem muitas classes, instanciar varios objetos, onde cada um responde a mesma mensagem, porem, cada um com a sua propia.  
+Tambem tem herança. 
+
+--------------------------------------------------
+
+//impletemntar metodo. 
+
+escrever o codigo, executa-lo. 
+
+//pass 
+
+não implemntou nada no metodo, está vazio.
+
+ 

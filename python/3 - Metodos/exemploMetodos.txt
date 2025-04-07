@@ -1,0 +1,43 @@
+def visualizarTabuada():
+    numero = int(input("Digite o número da tabuada: "))
+    contador = 0
+
+    while(contador<=10):
+        print(numero, " * ", contador, " = ",(numero* contador))
+        contador+=1
+
+
+def conversaoCelsiusFahrenheit(celsius):
+    fah = celsius * 1.8 + 32
+    print(f"C {fah:.2f} ")
+
+
+def verificarMaioridade(idade):
+    if(idade>=18):
+        return "Maior de idade"
+    else:
+        return "Menor de idade"
+
+
+print(verificarMaioridade(2))
+
+#print(exemploRetorno())
+
+
+
+
+#visualizarTabuada()
+#celsius = float(input("Digite o valor em celsius: "))
+#conversaoCelsiusFahrenheit(celsius)
+
+
+
+
+
+
+
+
+
+
+
+

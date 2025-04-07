@@ -1,0 +1,79 @@
+from abc import ABC
+
+
+class Pessoa:
+    def pFisica(self):
+        print("Pessoa Fisica: desconto de 5%")
+
+    def pJuridica(self):
+        print("Pessoa Fisica: desconto de 10%")
+
+
+
+class Produto(Pessoa):
+    def __init__(self,nome,valor,categoria):
+        self.__nome = nome
+        self.__valor = valor
+        self.__categoria = categoria
+
+
+
+    def cadastrar(self):
+        self.nome = input("Digite o Nome do produto:")
+        self.valor = input("Digite o Valor:")
+        self.categoria = input("Digite a categoria:")
+        self.pessoa = input("1-Pessoa fisica,2-Pessoa juridica")
+
+
+
+
+
+    def exbirP(self):
+        print('nome', self.nome)
+        print('Valor:',self.valor)
+        print('Categoria:', self.categoria)
+        if(self.pessoa == "1"):
+            print(self.pFisica())
+        else:
+            print(self.pJuridica())
+
+
+
+
+    def setNome(self,nome):
+        self.__nome = nome
+
+    def setValor(self, valor):
+        self.__valor = valor
+
+    def setNome(self, categoria):
+        self.__categoria = categoria
+
+    def getNome(self):
+        return  self.__nome
+
+    def getValor(self):
+        return self.__Valor
+    def getCategoria(self):
+        return self.__categoria
+
+
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\
+
+from Produto import Produto
+
+
+class cadastrarProduto(Produto):
+    def __init__(self,nome,valor,categoria):
+        super().__init__(nome,valor,categoria)
+
+
+
+p1 = cadastrarProduto('aa',200,'qq')
+p1.cadastrar()
+p1.exbirP()
+
+
+
+

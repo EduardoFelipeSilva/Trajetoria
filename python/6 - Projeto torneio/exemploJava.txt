@@ -1,0 +1,72 @@
+import java.util.Scanner;
+
+public class App {
+	
+	public static void main(String[] args) {
+	
+		Scanner sc = new Scanner(System.in);
+		
+		Calculadora calc = new Calculadora();
+		double n1,n2;
+		
+		
+		System.out.println("Escolha a opção desejada: \n1- Somar\n2 - Subtrair");
+		
+		
+			
+		System.out.println("Digite o primeiro número: ");
+		n1 = sc.nextDouble();
+		System.out.println("Digite o segundo número: ");
+     	n2 = sc.nextDouble();
+				
+		calc.somar(n1, n2);
+		
+		System.out.println("Digite o primeiro número: ");
+		n1 = sc.nextDouble();
+		System.out.println("Digite o segundo número: ");
+     	n2 = sc.nextDouble();
+		
+		calc.somar(n1, n2);
+		
+		System.out.println("Digite o primeiro número: ");
+		n1 = sc.nextDouble();
+		System.out.println("Digite o segundo número: ");
+     	n2 = sc.nextDouble();
+		calc.somar(n1, n2);
+		
+
+
+
+		
+	}
+}
+
+------------------------------------------------------
+
+
+public class Calculadora {
+	
+	//atributos
+	double numero1;
+	double numero2;
+	double resultado;
+
+	//métodos
+	public void somar(double numero1, double numero2){
+		this.numero1 = numero1;
+		this.numero2 = numero2;
+		resultado = numero1 + numero2;
+		System.out.println("O total da soma é: "+ resultado);
+	}
+	
+	/*
+    def somar(self,n1,n2):
+        self.n1 = n1
+        self.n2 = n2
+        self.resultado = self.n1 + self.n2
+        print("O total da soma é:",self.resultado)
+	*/
+	
+	
+	
+}

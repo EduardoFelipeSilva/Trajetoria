@@ -1,0 +1,47 @@
+from figurageometrica import FiguraGeometrica
+from Retangulo import Retangulo
+from cirsulo import Circulo
+
+fg = FiguraGeometrica()
+fg.calcularArea()
+
+retang = Retangulo()
+retang.calcularArea()
+
+circ = Circulo()
+circ.calcularArea()
+
+------------------------------------------------------
+
+from figurageometrica import FiguraGeometrica
+
+class Retangulo(FiguraGeometrica):
+
+    def calcularArea(self):
+        base = 4
+        altura = 8
+        area = base*altura
+        print(area)
+
+-------------------------------------------------------
+
+from figurageometrica import FiguraGeometrica
+
+class Circulo(FiguraGeometrica):
+
+    def calcularArea(self):
+        print("cálculo da área do circulo")
+
+
+-------------------------------------------------------
+
+from abc import ABCMeta, abstractmethod
+
+class FiguraGeometrica(metaclass=ABCMeta):
+
+    @abstractmethod
+    def calcularArea(self):
+        pass
+
+
+

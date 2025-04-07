@@ -1,0 +1,28 @@
+class Animal:
+    def falar(self):
+        pass
+
+class Cachorro(Animal):
+    def falar(self):
+        return "Au Au!"
+
+class Gato(Animal):
+    def falar(self):
+        return "Miau!"
+
+class Vaca(Animal):
+    def falar(self):
+        return "Moo!"
+
+def fazerAnimalFalar(animal):
+    print(animal.falar())
+
+# Criando instâncias das classes
+cachorro = Cachorro()
+gato = Gato()
+vaca = Vaca()
+
+# Chamando o método falar em diferentes instâncias
+fazerAnimalFalar(cachorro)
+fazerAnimalFalar(gato)    
+fazerAnimalFalar(vaca)    

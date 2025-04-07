@@ -1,0 +1,28 @@
+1-sobrecarga de metodo
+	def Soma
+	def Soma(varios parametros)
+quando tiver varios metodos com o mesmo nome mas com ou parametros diferetentes ou retornos diferentes
+
+2-subescrita
+para existir precisa ter herança
+voce cria uma class 'pessoa' com o metodo 'exibir'
+dai vc cria uma outra classe que vai  herdar os metodos da' pessoa'
+para sobrescrever o metodo 'exibir 'vc apenas repete ele na classe.
+
+
+	 class pessoa 
+		def exibir()
+
+	 class fernanda(pessoa)
+
+		def exibir() -- metodo exibir sobrescrito podendo exibir algo diferente do original
+
+3-classe abstrata
+nao instancia objeto so serve pra ser herdada
+	no java
+	from abc import ABC,abstractModel
+	class Pessoa(ABC):
+
+
+um exemplo é uma impressora, independende do metodo que a pessoa va imprimir o metodo vai ser
+o mesmo so vai mudar o codigo depois de herdado no caso subescrever o metodo

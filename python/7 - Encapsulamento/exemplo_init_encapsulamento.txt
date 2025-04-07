@@ -1,0 +1,29 @@
+class Pessoa:
+
+	def __init__(self,nome,idade,peso):
+		self.__nome = nome
+		self.idade = idade
+		self.peso = peso
+
+	def setNome(self, nome):
+		self.__nome = nome
+
+	def getNome(self):
+		return self.__nome
+
+--------------
+
+from pessoa import Pessoa
+
+p1 = Pessoa('Alexandre', 29, 80.5)
+
+p1.setNome('joão')
+print(p1.getNome)
+
+
+
+
+
+
+
+

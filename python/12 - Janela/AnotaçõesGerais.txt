@@ -1,0 +1,39 @@
+Anotações Gerais - Criando janelas no python. 
+
+
+----------------------------------------------------------------------------------------------
+
+° Conceitos: 
+
+- tk: pacote para trabalhar; 
+- tkinter: intarfacegrafica; 
+- def: metodos para cada formulario criado(telas/janelas);
+- geometry: para altura e largura na tela; 
+- root: raiz, sendo o formulario (janela) origem;
+- subformulario: janela gerado a partir de outra, por exemplo, a janela raiz. 
+- topLeval: para não bagunçar as janelas, deixar uma sob a outra quando abrir uma nova jaela;
+- label: nivel.
+
+----------------------------------------------------------------------------------------------
+
+° Estrutura: 
+
+def
+.
+.
+.
+.
+.
+barraMenu = tk.rootMenu
+.
+.
+.
+.
+.
+.
+opcao_menu_exe = tk.Menu(barraMenu, tearoff=0)
+----------------------------------------------------------------------------------------------
+ 
+
+ativi. = criar um formulario que adiciona um numero e mostra seu fatorial.
+

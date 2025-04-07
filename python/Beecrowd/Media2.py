@@ -1,0 +1,6 @@
+A= float(input())
+B = float(input())
+C= float(input())
+soma = (A*2) + (B*3) + (C*5)
+MEDIA = soma/(2+3+5)
+print(f'MEDIA = {MEDIA:.1f}')

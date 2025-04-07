@@ -1,0 +1,11 @@
+Crie um projeto em python e em php que utilize:
+
+Classes, atributos, métodos, objetos, getters e setters, construtor, sobrecarga, herança,sobrescrita e classes abstratas
+
+Tema: e-commerce
+
+fazer em trio
+
+uma apresentação quem mostre as particularidades em cada um dos termos
+
+

@@ -1,0 +1,70 @@
+from FiguraGeometrica import FiguraGeometrico
+from Quadrado import Quadrado
+from Circulo import Circulo
+from Retangulo import Retangulo
+from Losangulo import Losango
+
+# Criando instâncias das classes
+Quadrado = Quadrado()
+Circulo = Circulo()
+Losangolo = Losango()
+Retangulo = Retangulo()
+
+# Chamando o método falar em diferentes instâncias
+
+Circulo.calcularArea(2)
+
+class FiguraGeometrico:
+
+    def dados(self):
+        pass
+    def calculaArea(self, resultado):
+        self.resultado = resultado
+    def exibirResultado(self,resultado):
+        print(resultado)
+
+from FiguraGeometrica import FiguraGeometrico
+
+class Quadrado(FiguraGeometrico):
+    def dados(self,lado):
+        self.lado = int(input('Digite o lado:'))
+    def calculaArea(self, resultado):
+        self.resultado = self.lado*self.lado
+    def exibirResultado(self, resultado):
+        print(self.resultado)
+
+from FiguraGeometrica import FiguraGeometrico
+
+class Circulo(FiguraGeometrico):
+    def dados(self,circunferencia):
+        self.circunferencia = int(input('Digite a circunferencia'))
+        pi = 3.14
+    def calculaArea(self, resultado, pi):
+            self.resultado = self.circunferencia * pi
+    def exibirResultado(self, resultado):
+            print(self.resultado)
+
+from FiguraGeometrica import FiguraGeometrico
+
+class Retangulo(FiguraGeometrico):
+    def dados(self,base,altura):
+        self.base = int(input('Digite a base'))
+        self.altura = int(input('Digite a altura'))
+    def calculeArea (self, resultado):
+        self.resultado = (self.base*self.altura)
+    def exibirResultado(self, resultado):
+        print(self.resultado)
+
+from FiguraGeometrica import FiguraGeometrico
+
+class Losango(FiguraGeometrico):
+    def dados(self,largura,altura):
+        self.largura = int(input('Digite a largura'))
+        self.altura = int(input('Digite a altura'))
+    def calculaArea(self, resultado):
+        self.resultado = (self.largura*self.altura)/2
+    def exibirResultado(self,resultado):
+        print(self.resultado)
+
+
+

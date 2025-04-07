@@ -1,0 +1,5 @@
+tupla02 = (100, 'Gato', True, "Eu sou rolezeira")
+print(tupla02.index('Gato'))
+print(tupla02.index("Eu sou rolezeira"))
+print(tupla02.index(True))
+print(tupla02.index(100))
