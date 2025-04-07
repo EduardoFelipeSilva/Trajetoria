@@ -1,0 +1,83 @@
+body{
+    background-color: #e9f3e7; 
+}
+
+#tabuada {
+    background-color: #99ca99 ;
+    border-radius: 2%;
+    margin-bottom: 3%;
+    font-size: 20px;
+}
+
+#tabuadaresult {
+    margin-top: 10%;
+    background-color: #99ca99;
+    border-radius: 3%;
+    margin: auto;
+    font-size: 20px;
+}
+#imc {
+    background-color: #99ca99;
+    border-radius: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+#imcresult {
+    margin-top: 10px;
+    background-color: #99ca99;
+    border-radius: 3%; 
+    margin: auto;
+    font-size: 20px;
+
+}
+#imposto {
+    background-color: #99ca99;
+    border-radius: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+#impostoresult {
+    margin-top: 10px;
+    background-color: #99ca99;
+    border-radius: 3%;
+    font-size: 25px;
+    margin: auto;
+    font-size: 20px;
+}
+#maior {
+    background-color: #99ca99;
+    border-radius: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+#maioresult {
+    margin-top: 10px;
+    background-color: #99ca99;
+    border-radius: 3%;
+    font-size: 20px;
+    margin: auto;
+}
+
+#tri {
+    background-color: #99ca99;
+    border-radius: 2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+}
+#triresult {
+    margin-top: 10px;
+    background-color: #99ca99;
+    border-radius: 3%;
+    margin: auto;
+    font-size: 20px;
+}
+.container{
+    margin-top: 15%;
+}
+h4{
+    font-size: 30px;
+}
+.nav-link{
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}

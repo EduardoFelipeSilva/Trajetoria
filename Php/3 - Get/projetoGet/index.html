@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario topzera</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="CSS/estilo-script.css">
+  
+</head>
+<body>
+    <button style="cursor: pointer;" id="btnDark"><img src="IMG/lua-e-estrelas.png" alt=""></button>
+    <h1> Cadastro </h1>
+
+<div class="fundo">
+<div class="centro">
+   
+
+
+    <form action="script.php" method ="post"> <div class="coisa"> </div>
+
+        <span class="material-symbols-outlined">
+            person
+            </span><input class="caixa" type="text" name="nome" placeholder="Digite seu nome" /></p>
+            <span class="material-symbols-outlined">
+                drafts
+                </span><input class="caixa"type="text" name="email" placeholder="Digite seu E-mail"/></p>
+                <span class="material-symbols-outlined">
+                    calendar_month
+                    </span><input class="data"type="date" name="idade"/></p>
+                    <span class="material-symbols-outlined">
+                        password
+                        </span> <input class="caixa" type="password" name="senha"/></p>
+    
+                
+    <div class="radio" >
+        <span class="material-symbols-outlined">
+            man
+            </span><label for="">Masculino</label>
+        <input type="radio" name="genero" id="masculino" value="masculino" checked>
+        <span class="material-symbols-outlined">
+            woman
+            </span><label for="">Feminino</label>
+        <input type="radio" name="genero" id="feminino" value="feminino">
+       </div>
+
+       <div class="interesses">
+        <h2>Interesses</h2>
+        <div>
+            <span class="material-symbols-outlined">
+                sports_and_outdoors
+                </span><label for="futebol">Futebol</label>
+            <input type="checkbox" name="interesses[]" id="futebol" value="futebol">
+        </div>
+        <div>
+            <span class="material-symbols-outlined">
+                description
+                </span><label for="cursos">Cursos</label>
+            <input type="checkbox" name="interesses[]" id="cursos" value="cursos">
+        </div>
+        <div>
+            <span class="material-symbols-outlined">styler
+</span><label for="moda">Moda</label>
+            <input type="checkbox" name="interesses[]" id="moda" value="moda">
+        </div>
+    </div>
+        <div class="estados">
+                <h2>Estados</h2>
+                <select name="estados" id="">
+                    <option> AC </option> <option> AL </option> <option> AP </option> <option> AM </option> <option> BA </option><option> CE </option> <option> ES </option> <option> GO </option> <option> MA </option>
+      <option> MT </option> <option> MS </option> <option> MG </option> <option> PA </option> <option> PB </option> <option> PR </option> <option> PE </option> <option> PI </option>
+       <option> RJ </option> <option> RN </option> <option> RS </option> <option> RO  </option> <option> RR </option> <option> SC </option> <option value="sp"> SP </option> <option> SE </option>
+        <option> TO </option> <option> DF </option>
+                </select>
+
+        </div>
+ 
+<h2>Observações <span class="material-symbols-outlined">
+    ink_pen
+    </span></h2>
+       <div class ="observacao">
+        
+    <textarea name="observacao" id="idObservacao" cols="50" rows="10" placeholder="Observações..."></textarea>
+               </div>
+        <input type="submit" value = "Cadastrar"/>
+       
+    </p>
+    </form>
+</div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>

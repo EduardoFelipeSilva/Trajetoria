@@ -1,0 +1,52 @@
+
+#foto img{
+
+    height: 50vh;
+
+}
+
+#carrosel{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    margin-top: 2%;
+}
+
+#centrocarrossel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ #opcao {
+    margin-top: 2%;
+ }
+
+ #card {
+    margin-top: 2%;
+ }
+ #card1 {
+    margin-top: 2%;
+ }
+ #footer{
+    margin-top:2%;
+ }
+h1{
+   color: black;
+}
+
+#quem{
+   margin-top: 20%;
+   justify-content: center;
+   align-items: center;
+}
+
+.card-login {
+   padding: 30px 0 0 0;
+   width: 350px;
+   margin: 0 auto;
+ }
+
+ #botaoentrar {
+   margin-top: 5%;
+ }
