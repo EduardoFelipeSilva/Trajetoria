@@ -1,0 +1,44 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+/*
+function dobro(n){
+  return n*2;
+}
+*/
+
+//sem parâmetro e sem retorno
+const mensagem = () => "Seja bem-vindo(a)"
+
+//com parâmetro e com retorno
+const dobro = (n) => n*2
+
+//com mais de um parâmetro e com retorno
+const somar = (num1,num2) => num1+num2
+
+//com parametro, com retorno e com if ternário
+const verificar = status => status === 2 ? "verdadeiro":"falso"
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+
+      <Text> {mensagem()} </Text>
+      <Text> {dobro(9)} </Text>
+      <Text> {somar(2,8)} </Text>      
+      <Text> {verificar(1)} </Text>
+
+      <Text>Open up App.js to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

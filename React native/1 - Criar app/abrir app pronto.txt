@@ -1,0 +1,19 @@
+Apos abrir cmd, podemos (agora) abrir um arquivo já pronto. 
+
+TuTORAL:
+
+1) cd\
+(ir para diretorio)
+
+2) cd\ expo 
+(abrir pasta expo)
+
+3) C:\expo>cd exemplo
+(abrir arquivo exemplo)
+
+4) C:\expo\exemplo>code .
+(abrir vscode)
+
+5) C:\expo\exemplo>npm run web
+(abrir pagina web)
+

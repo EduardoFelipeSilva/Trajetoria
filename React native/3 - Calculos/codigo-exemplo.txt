@@ -1,0 +1,46 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+var numero1 = 8;
+var numero2 = 2;
+var soma = numero1 + numero2;
+
+resposta =""
+
+// > < >= <= == != 
+// && || !
+if(numero1 >= 6){
+  resposta = "maior ou igual a 6"
+}
+else{
+  resposta = "menor do que 6"
+}
+
+function subtrair(){
+  //
+  return numero1 - numero2;
+}
+
+export default function App() {
+  return (
+    <View style={styles.container}>      
+      
+
+      <Text> {numero1} + {numero2} = {soma} outra forma {numero1+numero2} </Text>
+      <Text> {resposta} </Text>
+
+      <Text> {subtrair()} </Text>
+
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

@@ -1,0 +1,97 @@
+import { StyleSheet,Image,Text,SafeAreaView,ScrollView,StatusBar, } from 'react-native';
+
+import android from './IMG/android.webp';
+import cordova from './IMG/cordova.png';
+import swift from './IMG/swift1.png';
+
+
+
+export default function App() {
+  return (
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+    
+      
+        <Text style={styles.titulo}>Android</Text>
+      
+       
+        <Text style={styles.texto}>Android é um sistema operacional (SO) baseado no núcleo Linux, projetado principalmente para dispositivos eletrônicos móveis com tela sensível ao toque ou interface de usuário baseada na manipulação direta; desenvolvido por um consórcio de desenvolvedores conhecido como Open Handset Alliance, sendo o principal colaborador o Google.
+          Possui interface específica para aparelho televisivo (Android TV), carros (Android Auto) e relógios inteligentes (Wear OS).</Text>
+     
+      <Image        
+        style={styles.image}
+        source={android}
+      />
+
+     
+       
+        <Text style={styles.titulo}>Swift</Text>
+     
+       
+        <Text  style={styles.texto}>Swift é uma linguagem de programação eficiente e intuitiva desenvolvida pela
+          Apple para a criação de apps. Com ela, programar fica mais fácil, flexível
+          e divertido. Além de facilitar a aprendizagem da programação, a linguagem
+          Swift é muito poderosa. Ela foi projetada para escrever desde o programa
+          mais simples, como “Olá, mundo”, ao software mais avançado do mundo.
+        </Text>
+   
+
+      <Image        
+        style={styles.image}
+        source={swift}        
+      />
+
+
+      
+      
+        <Text style={styles.titulo}>Cordova</Text>
+      
+      
+        <Text  style={styles.texto}>Apache Cordova (anteriormente PhoneGap ) é uma estrutura de desenvolvimento de aplicativos móveis criada por Nitobi . 
+          A Adobe Systems comprou o Nitobi em 2011, rebatizou-o como PhoneGap e mais tarde lançou uma versão de código aberto do software chamada Apache Cordova. 
+          O Apache Cordova permite que programadores de software criem aplicativos web híbridos para dispositivos móveis usando CSS3 , HTML5 e JavaScript , em vez de depender de APIs específicas de plataforma como as do Android , iOS ou Windows Phone .
+       </Text>
+         
+        <Image        
+        style={styles.image}
+        source={cordova}        
+      />
+     
+
+     </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
+  },
+  image: {    
+    width: '50%',
+    height: '20%',
+    backgroundColor: '#0553',
+    margin:'auto',
+  },
+  titulo: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop:20,
+   textAlign:'center',
+   marginBottom:10,
+  },
+  texto: {
+    fontSize:16,
+     paddingBottom:25,
+     
+  },
+    scrollView: {
+    marginHorizontal: 20,
+    
+  },
+
+});

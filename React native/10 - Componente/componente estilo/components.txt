@@ -1,0 +1,39 @@
+
+App.js
+
+import Topo from './components/topo'; 
+import { StyleSheet, Text, View } from 'react-native';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      
+        <Topo/>
+        
+
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
+
+----------------------------------------------
+
+topo.js
+
+import {Text, View } from 'react-native';
+
+export default function Topo() {
+  return (
+    <View>
+      <Text>Topo</Text>
+    </View>
+  );
+}

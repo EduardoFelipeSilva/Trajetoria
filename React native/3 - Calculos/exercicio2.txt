@@ -1,0 +1,42 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+var nota = 7;
+var nota2 = 4;
+var nota3 = 6;
+var nota4 = 3;
+
+var media = (nota+nota2+nota3+nota4)/4;
+
+resposta = ""
+
+if (media >= 6){
+  resposta = "aprovado"
+}
+else {
+  resposta ="reprovado"
+}
+
+
+export default function App() {
+  return (
+    <View style={styles.container}>      
+      
+
+      <Text> Sua media é: {media}  </Text>
+      <Text> {resposta}</Text>
+
+
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

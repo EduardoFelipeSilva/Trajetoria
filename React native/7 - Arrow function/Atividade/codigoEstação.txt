@@ -1,0 +1,122 @@
+import React, { useState } from 'react';
+import { Text, View, TextInput, Button,Image, StyleSheet } from 'react-native';
+import verao from '../atividade/img/verao.jpg';
+import inverno from '../atividade/img/inverno.jpg';
+import outono from '../atividade/img/outono.jpeg';
+import Primavera from '../atividade/img/Primavera.jpg';
+
+export default function Aplicacao() {
+
+  const [numero, setNumero] = useState('');
+  const [resultado, setResultado] = useState(null);
+  const exibir = () => {
+    let teste
+const numeroInt = parseInt(numero);
+
+  switch (numeroInt){
+    case 0: 
+      teste =<View>
+
+          <Text style={styles.resposta}>Verão (21/12 a 20/03):</Text>
+          <Image style={styles.image} source={verao}/>
+        </View>
+      ;
+      break;
+    case 1: 
+      teste =<View>
+          <Text style={styles.resposta}>Inverno (20/06 a 22/09):</Text>
+          <Image style={styles.image} source={inverno}/>
+        </View>
+      break;
+    case 2: 
+      teste =<View>
+          <Text style={styles.resposta}>Outono (20/03 a 21/06):</Text>
+          <Image style={styles.image} source={outono}/>
+        </View>
+      break;
+    case 3: 
+      teste =<View>
+
+          <Text style={styles.resposta}>Primavera (22/09 a 21/12):</Text>
+          <Image style={styles.image} source={Primavera}/>
+        </View>
+      break ;
+    default:
+      teste = 'valor invalido';
+  }
+  setResultado(teste);
+};
+  return (
+    <View style={styles.tudo}>
+
+      <View>
+        <Text style={styles.titulo}> Saber a estação</Text>
+      </View>
+
+      <View style={{ margin: 15 }}>
+      <Text style={styles.resposta}> Digite um numero de 0 a 3 para saber a estação:  </Text>
+        <TextInput
+          style={styles.caixaDeTexto}
+          placeholder='Digite aqui o numero'
+          placeholderTextColor='#0ff'
+          autoFocus={true}
+          keyboardType={'numeric'}
+          onChangeText = {text => setNumero(text)}
+        />
+      </View>
+
+     
+
+      <View style={{ margin: 15 }}>
+        <Button title='Exibir uma imagem da estação' onPress={() => exibir()}/>
+      </View>
+
+         <View style={{margin:15}}>
+                     <Text style={styles.resposta}> {resultado}   </Text>
+          </View>
+          
+
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+
+  tudo: {
+    backgroundColor: '#000',
+    height: '100%',
+    width: '100%'
+
+  },
+
+  titulo: {
+    color: '#00f',
+    fontSize: 25,
+    textAlign: 'center',
+    marginTop: 25,
+    marginBottom: 10
+
+  },
+    image: {    
+    width: 345,
+    height: 250,
+    backgroundColor: '#0553',
+    margin:'auto',
+  },
+
+  caixaDeTexto: {
+    borderWidth: 1,
+    borderColor: '#00f',
+    color: '#0ff',
+    borderRadius: 40,
+    paddingLeft: 25,
+    height: 60
+  },
+
+  resposta: {
+    color: 'white',
+    fontSize: 25,
+    textAlign: 'center',
+    marginTop: 10
+  }
+});

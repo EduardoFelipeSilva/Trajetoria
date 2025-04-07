@@ -1,0 +1,20 @@
+import Estilo from './components/estilo'
+
+<View style={Estilo.container}>
+
+
+
+-------
+Arquivo Estilo
+
+
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+    container: {
+      flex: 1, 
+      alignItems: 'center', 
+      justifyContent: 'center',
+      backgroundColor:'#f00'
+    },
+  });

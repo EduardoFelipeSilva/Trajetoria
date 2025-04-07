@@ -1,0 +1,67 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+
+var resposta = 4;
+
+switch (resposta){
+  case 1: 
+    resposta = "Janeiro";
+    break;
+  case 2: 
+    resposta = "Fevereiro";
+    break;
+  case 3: 
+    resposta = "Março";
+    break;
+  case 4: 
+    resposta = "Abril";
+    break;
+  case 5: 
+    resposta = "Maio";
+    break;
+  case 6: 
+    resposta = "Junho";
+    break;
+  case 7: 
+    resposta = "Julho";
+    break;
+  case 8: 
+    resposta = "Agosto";
+    break;
+  case 9: 
+    resposta = "Setembro";
+    break;
+  case 10: 
+    resposta = "Outubro";
+    break;
+  case 11: 
+    resposta = "Novembro";
+    break;
+  case 12: 
+    resposta = "Dezembro";
+    break;
+}
+
+
+export default function App() {
+  return (
+    <View style={styles.container}>      
+      
+
+      <Text> O mes é: {resposta}  </Text>
+
+
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

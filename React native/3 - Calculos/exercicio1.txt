@@ -1,0 +1,31 @@
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
+
+var salario = 2000;
+var aumento = 10;
+var valoraumento = salario*(aumento/100);
+var novosalario = salario+valoraumento
+
+
+export default function App() {
+  return (
+    <View style={styles.container}>      
+      
+
+      <Text> O salario é {salario}, o valor do aumento sera {valoraumento}  </Text>
+      <Text> seu novo salario sera {novosalario}</Text>
+
+
+      <StatusBar style="auto" />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

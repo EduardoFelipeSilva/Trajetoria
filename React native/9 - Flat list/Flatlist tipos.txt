@@ -1,0 +1,29 @@
+Troca de informaçoes
+-Banco de dados
+_API
+-.txt
+-.csv(excel)
+
+*XML(Extensible Markup Language)
+<Aluno>
+	<nome>fernanda</nome>
+	<idade>20</idade>
+</Aluno>
+
+*JSON(js-Java Script, o-Object, n-notation)
+{
+	"nome":"eduardo"
+	"idade":"26"
+}
+-FlatList
+{
+	id: '3a2de7e1-a7a6-4ebf-beea-56831ad518a6',
+	title: 'First item',
+},
+{
+	id: '9361a248-e159-45f5-b500-f8c99eb9f551',
+	title: 'First item',
+},
+
+gerar ID com extensão UUID para ser aleatorio
+

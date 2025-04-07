@@ -1,0 +1,27 @@
+Abri o cmd
+cd\ -unidade raíz
+mkdir expo - cria uma pasta
+cd expo - acessa a pasta
+
+digitar o comando npm install -g expo-cli
+para instalar o react native
+
+criar o projeto 
+expo init nomeDoProjeto pressionar a tecla enter
+escolher a opção blank (padrão) e pressionar a tecla enter
+
+Para executar o projeto
+cd nomeDoProjeto
+
+npm run web
+
+npx expo install react-native-web react-dom @expo/metro-runtime
+
+(para instalar as dependências para navegar pela web)
+
+após a instalação das dependências da web, digitar o comando 
+code .
+
+Por fim, digite novamente
+npm run web
+

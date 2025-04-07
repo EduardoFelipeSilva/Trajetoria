@@ -1,0 +1,29 @@
+Tendo um aplicativo "pronto"
+Observe: deve ter instalado o git no computador
+
+1 - Criar uma conta na Expo e fazer login
+https://expo.dev/signup
+
+
+2 Instalar 
+npm install --global eas-cli
+
+3
+eas build:configure
+colocar o e-mail e senha utilizados na conta de criação do expo
+
+4 - quer criar um projeto? Y
+
+5 - Colocar a opção do android
+
+6 - eas build
+
+7 - o aplicativo será gerado (demora alguns minutos)
+
+8 - Abrir a conta do expo, selecionar o aplicativo e fazer o download
+
+9 - Enviar o arquivo para o celular .aab
+
+10 - Utilizar o aplicativo AAB instaler para converter de .aab para apk
+
+11 - Instalar o APK

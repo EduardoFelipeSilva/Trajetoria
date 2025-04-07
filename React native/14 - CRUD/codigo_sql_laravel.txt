@@ -1,0 +1,26 @@
+no controller
+
+use Illuminate\Support\Facades\DB;
+
+  public function legal(){
+        $sql = 'select a.nomeAluno, p.periodo, c.Curso, mo.Modulo
+             from
+             tb_atraso a
+             inner join tb_periodo p on
+             a.idPeriodo = p.idPeriodo
+             inner join tb_curso c on
+             a.idCurso = c.idCurso
+             inner join tb_modulo mo on
+             a.idModulo = mo.idModulo
+        ';	
+	    
+        $resultado = DB::select($sql);
+        
+        return $resultado;
+    }
+
+--------------
+
+na rota
+
+Route::get('/legal','App\Http\Controllers\atrasoController@legal');

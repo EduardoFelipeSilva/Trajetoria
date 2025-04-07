@@ -1,0 +1,35 @@
+import { StyleSheet, View,Image } from 'react-native';
+
+import paisagem from './images/paisagem.jpg';
+import teste from './images/teste.jpg';
+
+export default function App() {
+  return (
+    <View style={styles.container}>
+      <Image        
+        style={styles.image}
+        source={teste}
+        
+      />
+
+      <Image        
+        style={styles.image}
+        source={paisagem}        
+      />
+    </View>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  image: {    
+    width: '50%',
+    height: '50%',
+    backgroundColor: '#0553',
+  },
+});

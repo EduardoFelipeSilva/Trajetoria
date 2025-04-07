@@ -1,0 +1,168 @@
+import React, { useState } from 'react';
+import { Text, View, TextInput, Button,StyleSheet } from 'react-native';
+
+
+export default function Aplicacao() {
+
+  const [nome, setNome] = useState('');
+  const [idade, setIdade] = useState('');
+  const [cpf, setCpf] = useState('');
+  const[estado,setEstado] = useState()
+  const [dados, setDados] = useState('');
+
+  const Idade = () =>{
+    if(idade >= 18){
+      setIdade("Você é maior de idade")
+    }else{
+      setIdade("Você é menor de idade")
+    }
+  }
+  const salvarDadosEObterCpf = () => {
+    salvarDados(); 
+    pegarCpf(); 
+    Idade();
+  }
+
+  const pegarCpf = () => {
+     const numerocpf =   cpf.charAt(cpf.length - 3);
+    
+    if (numerocpf === "0") {
+      setEstado("RS");
+  } else if (numerocpf === "1") {
+      setEstado("DF, GO, MT, MS e TO");
+  } else if (numerocpf === "2") {
+      setEstado("PA, AM, AC, AP, RO e RR");
+  } else if (numerocpf === "3") {
+      setEstado("CE, MA e PI");
+  } else if (numerocpf === "4") {
+      setEstado("PE, RN, PB e AL");
+  } else if (numerocpf === "5") {
+      setEstado("BA e SE");
+  } else if (numerocpf === "6") {
+      setEstado("MG");
+  } else if (numerocpf === "7") {
+      setEstado("RJ e ES");
+  } else if (numerocpf === "8") {
+      setEstado("SP");
+  } else if (numerocpf === "9") {
+      setEstado("PR e SC");
+  } else {
+      setEstado("Estado não identificado");
+  }
+};
+
+  const salvarDados = () => {
+    if(!nome || !idade || !cpf){
+      setDados(false);
+    }else{
+      setDados(true);
+    }
+
+  };
+  return (
+    <View style={styles.tudo}>
+
+      <View>
+        <Text style={styles.titulo}> Exibir dados</Text>
+      </View>
+
+      <View style={{ margin: 5 }}>
+      <Text style={styles.resposta}> Digite seu nome</Text>
+        <TextInput
+          style={styles.caixaDeTexto}
+          placeholder='Nome'
+          placeholderTextColor='#0ff'
+          autoFocus={true}
+          keyboardType={'default'}
+          onChangeText = {text => setNome(text)}
+        />
+      </View>
+
+            <View style={{ margin: 5 }}>
+      <Text style={styles.resposta}> Digite sua idade  </Text>
+        <TextInput
+          style={styles.caixaDeTexto}
+          placeholder='Idade'
+          placeholderTextColor='#0ff'
+          autoFocus={true}
+          keyboardType={'numeric'}
+          onChangeText = {text => setIdade(text)}
+        />
+      </View>
+
+            <View style={{ margin: 5 }}>
+      <Text style={styles.resposta}> Digite seu cpf  </Text>
+        <TextInput
+          style={styles.caixaDeTexto}
+          placeholder='CPF'
+          placeholderTextColor='#0ff'
+          autoFocus={true}
+          keyboardType={'numeric'}
+          onChangeText = {text => setCpf(text)}
+        />
+      </View>
+
+     
+
+      <View style={{ margin: 15 }}>
+        <Button title='Exibir dados' onPress={salvarDadosEObterCpf}/>
+      </View>
+
+      {dados &&(
+     <View style={{margin:15}}>
+     <View>
+     <Text style={styles.resposta}>
+        Nome: {nome ? nome.toUpperCase() : ''}
+      </Text>
+       <Text style={styles.resposta}>{idade}</Text>
+       <Text style={styles.resposta}>estado: {estado}</Text>
+     </View>
+   </View>
+)}
+
+
+    </View>
+  );
+}
+
+
+const styles = StyleSheet.create({
+
+  tudo: {
+    backgroundColor: '#000',
+    height: '100%',
+    width: '100%'
+
+  },
+
+  titulo: {
+    color: '#00f',
+    fontSize: 25,
+    textAlign: 'center',
+    marginTop: 15,
+    marginBottom: 5
+
+  },
+    image: {    
+    width: 345,
+    height: 250,
+    backgroundColor: '#0553',
+    margin:'auto',
+  },
+
+  caixaDeTexto: {
+    borderWidth: 1,
+    borderColor: '#00f',
+    color: '#0ff',
+    borderRadius: 40,
+    paddingLeft: 25,
+    height: 60
+  },
+
+  resposta: {
+    color: 'white',
+    fontSize: 25,
+    textAlign: 'center',
+    marginTop: 10
+  }
+});

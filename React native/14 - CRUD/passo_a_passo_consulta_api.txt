@@ -1,0 +1,35 @@
+1 criar o projeto
+composer create-project laravel/laravel apiAtraso "9.4"
+
+2 configura o banco
+arquivo .env (configurações do bd)
+
+3 criar o model e o controller
+php artisan make:model Curso
+php artisan make:controller CursoController --resource
+
+4 no model
+protected $table = "tbPeriodo";
+public $timestamps = false;
+
+5 no controller
+usar o model e implementar o código dos métodos necessários
+
+use App\Models\Periodo;
+
+public function index()
+    {
+        $periodo = Periodo::all();
+        return $periodo;
+    }
+
+6 criar a rota
+no diretório routes, utilizar o arquivo api.php
+
+Route::get('/periodo','App\Http\Controllers\PeriodoController@index');
+
+7 para executar, no navegar digite:
+
+http://localhost:8000/api/periodo
+
+

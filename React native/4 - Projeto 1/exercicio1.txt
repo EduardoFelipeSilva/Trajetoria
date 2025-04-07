@@ -1,0 +1,184 @@
+import { StyleSheet,Image,Text,SafeAreaView,ScrollView,StatusBar, } from 'react-native';
+
+import arquitetura from './IMG/arquitetura2.jpg';
+import appstore from './IMG/appstore.webp';
+import playstore from './IMG/playstore.jpg';
+
+
+
+export default function App() {
+  return (
+    <SafeAreaView style={styles.container}>
+      <ScrollView style={styles.scrollView}>
+    
+      
+        <Text style={styles.titulo}>Arquitetura de uma aplicação Mobile</Text>
+      
+       
+        <Text style={styles.texto}>Definimos como arquitetura as técnicas e os padrões usados para projetar e desenvolver uma aplicação. Ela fornece um roadmap e práticas recomendadas a serem seguidos durante esse desenvolvimento para que você tenha uma aplicação bem-estruturada.
+O serviços de front-end e back-end fazem parte da arquitetura da aplicação. O desenvolvimento de front-end tem como foco a experiência do usuário da aplicação, já o de back-end se concentra em fornecer acesso aos dados, serviços e outros sistemas existentes responsáveis pelo funcionamento dela.
+A arquitetura é o ponto de partida ou o roadmap para desenvolver uma aplicação. No entanto, você precisa escolher determinados aspectos de implementação não definidos em uma arquitetura. Por exemplo, como uma etapa inicial, escolha a linguagem de programação para escrever a aplicação.
+As arquiteturas modernas de aplicação costumam ser mais levemente acopladas. Elas usam microsserviços e interfaces de programação de aplicações (APIs) para conectar serviços, oferecendo a base para as aplicações nativas em nuvem. 
+Com o desenvolvimento nativo em nuvem, você acelera a criação de novas aplicações, otimiza as existentes e oferece uma experiência de gerenciamento automatizada e desenvolvimento consistente em nuvens privadas, públicas e híbridas.
+</Text>
+     
+      <Image        
+        style={styles.image}
+        source={arquitetura}
+      />
+
+     
+       
+        <Text style={styles.subtitulo}>1.1 Arquitetura em camadas ou N camadas</Text>
+     
+       
+        <Text  style={styles.texto}>É um tipo de arquitetura tradicional muito usado para desenvolver aplicações empresariais e on-premise. Frequentemente, ele é associado às aplicações legadas.
+Para compor a aplicação, esse tipo de arquitetura usa diversas camadas que desempenham as próprias tarefas. Geralmente, são utilizadas três camadas, mas esse número pode ser maior. 
+Com as camadas, é possível gerenciar dependências e executar funções lógicas. Nesse tipo de arquitetura, as camadas são organizadas na horizontal e só podem chamar uma camada que está abaixo delas. 
+
+        </Text>
+       
+       <Text style={styles.subtitulo}>1.2 Arquitetura de microsserviços</Text>
+     
+       
+        <Text  style={styles.texto}>Os microsserviços são uma arquitetura e uma abordagem para escrever software. Com eles, as aplicações são desmembradas em componentes menores e independentes. Cada um dos componentes ou processos é um microsserviço.
+Os microsserviços são distribuídos e levemente acoplados, de modo que não impactem uns aos outros. Isso traz benefícios de escalabilidade dinâmica e tolerância a falhas. Logo, os serviços individuais podem executar failover sem afetar os outros e ser escalados conforme necessário, sem precisar de uma infraestrutura pesada.
+
+        </Text>
+        <Text  style={styles.texto}>Fonte de pesquisa: https://www.redhat.com/pt-br/topics/cloud-native-apps/what-is-an-application-architecture#arquitetura-orientada-a-servi%C3%A7os</Text>
+
+        <Image        
+        style={styles.image}
+        source={appstore}
+      />
+
+
+
+
+        <Text style={styles.titulo}>Publicar Aplicações nas principais plataformas</Text>
+        <Text style={styles.titulo}>App Store e PlayStore</Text>
+        <Text style={styles.subtitulo}>1.1 Criação de conta</Text>
+        <Text style={styles.subtitulo2}> App Store</Text>
+      
+        <Text  style={styles.texto}> Existem dois tipos de contas Apple Developer
+A conta do Apple Developer deve ser criada de acordo com o objetivo do desenvolvedor, e pode ser:
+
+
+•	Individual: nessa categoria, há somente um acesso para a assinatura e certificados do aplicativo. O desenvolvedor que publicar o aplicativo por meio de uma conta individual deverá ter autorização do cliente a cada vez que acessar. Isso é preciso, pois a Apple trabalha com o Two Factor Authorization (identificação por dois fatores).
+•	Enterprise: nessa categoria, há vários acessos para a conta, sendo possível definir o nível de permissão, o que facilita nos casos em que desenvolvedores precisam acessar. Contudo, embora os preços da conta individual e da enterprise sejam os mesmos, ao serem criados para o tipo empresarial é necessário ter CNPJ e D-U-N-S.
+</Text>
+<Text style={styles.subtitulo2}> PlayStore</Text>
+<Text  style={styles.texto}> Para publicar apps particulares no Play Console, você precisa fazer o registro de uma conta de desenvolvedor do Google Play. Ela concede os privilégios de administrador necessários para fazer upload e publicar apps particulares no Google Play gerenciado. Depois disso, use o console de EMM para distribuir os apps aos usuários.
+Você precisa especificar as configurações de apps particulares para que eles só estejam disponíveis para os usuários da organização e sejam fáceis de encontrar. Também será preciso especificar determinadas configurações se você hospedar o app em vez do Google. Para fazer upload e publicar apps particulares, é necessário apenas um pacote de aplicativo para Android (APK) e um título. 
+ </Text>
+       
+        <Image        
+        style={styles.image}
+        source={playstore}        
+      />
+      <Text style={styles.subtitulo}>1.2 Quanto tempo demora para subir um aplicativo</Text>
+      <Text style={styles.subtitulo2}> App Store</Text>
+
+<Text  style={styles.texto}>O prazo médio para a publicação de um aplicativo na App Store é de aproximadamente 5 dias úteis após o recebimento do Pedido de Publicação. No entanto, é importante lembrar que a Apple realiza uma revisão interna, o que pode adicionar até 10 dias úteis extras ao processo. Portanto, em geral, o prazo total pode variar em torno de 15 dias úteis. É recomendado considerar esses prazos ao planejar o lançamento do seu aplicativo na App Store.
+</Text>
+
+<Text style={styles.subtitulo2}> PlayStore</Text>
+<Text  style={styles.texto}> Google passa a demorar três dias em aprovação de apps para a Play Store. Em mudanças silenciosas aplicadas recentemente, o Google mudou seu prazo de análise para a aprovação de novos aplicativos para a Play Store. Agora, a empresa demora até três dias para finalizar o processo e dar seu parecer.
+ </Text>
+        
+     
+     <Text style={styles.subtitulo}>1.3 Quanto custa para publicar um app em 2023? </Text>
+     <Text style={styles.subtitulo2}> App Store</Text>
+
+<Text  style={styles.texto}>Custa 99 dólares por ano para contas individuais de desenvolvedores, pessoas físicas e para empresas.
+</Text>
+<Text style={styles.subtitulo2}> PlayStore</Text>
+<Text  style={styles.texto}>Para criar a conta, é preciso concordar com o contrato de desenvolvedor e pagar uma taxa de registro, que custa US$ 25, com cartão de crédito internacional. Essa taxa é única e, depois de paga, permite publicar quantos aplicativos desejar. Infelizmente, não há como publicar app na Play Store de graça.
+ </Text>
+
+        
+   
+       <Text style={styles.subtitulo}>1.4 Qual a taxa nas vendas realizadas pelo aplicativo?</Text>
+
+       <Text style={styles.subtitulo2}> App Store</Text>
+<Text  style={styles.texto}>Se você pretende lucrar com um aplicativo móvel em 2023, saiba que atualmente, a Apple aplica uma taxa de 30% em compras internas de aplicativos que geram mais de US$1 milhão em receita anualmente. No entanto, para os desenvolvedores que faturam valores inferiores a esse limite, a taxa é reduzida para 15%. Essa política tem o objetivo de beneficiar especialmente os desenvolvedores de menor porte, proporcionando uma taxa mais vantajosa para eles. É importante ter em mente essas informações ao considerar o desenvolvimento e a comercialização de aplicativos na plataforma da Apple.
+</Text>
+<Text style={styles.subtitulo2}> PlayStore</Text>
+<Text  style={styles.texto}>Para a maior parte da receita do Google Play, esse modelo de negócios é a cobrança de uma taxa de serviço. Somente desenvolvedores que vendem apps pagos ou o acesso no app a conteúdos ou serviços digitais estão sujeitos a uma taxa de serviço, e mais de 99% deles se qualificam para uma tarifa de até 15%.
+ </Text>
+
+   
+<Text style={styles.subtitulo}>2.0 Quanto custa a criação de um aplicativo?</Text>
+     
+       
+     <Text  style={styles.texto}>Desenvolvimento de aplicativos: quanto custa? O custo de um orçamento destinado à criação de aplicativos varia de acordo com o tipo de projeto. Em média, o mercado atual apresenta uma estimativa média de R$150 mil a R$ 500 mil no valor de desenvolvimento de aplicativos.
+     </Text>
+
+     <Text style={styles.subtitulo}>3.0 Quanto ganha um dono de app </Text>
+     
+       
+     <Text  style={styles.texto}>Em média, cada download realizado na Play Store gera US$ 0,018 para os desenvolvedores, ao mesmo tempo em que na App Store da Apple esse valor chega aos US$ 0,10. No Windows Phone há ainda mais rentabilidade, terminando em US$ 0,15.
+     </Text>
+
+     <Text style={styles.subtitulo}>4.0 Quanto custa para manter um aplicativo no ar? </Text>
+     
+       
+     <Text  style={styles.texto}>Normalmente, o custo de manutenção de um aplicativo corresponde a cerca de 10% a 15% do custo total de desenvolvimento. Porém, é importante solicitar um orçamento personalizado para o seu projeto.
+     </Text>
+
+     <Text  style={styles.texto}>Fonte de pesquisa: https://www.portalinsights.com.br/perguntas-frequentes/quanto-custa-para-publicar-um-aplicativo-na-play-store-2023</Text>
+     
+     
+
+     </ScrollView>
+    </SafeAreaView>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingTop: StatusBar.currentHeight,
+  },
+  image: {    
+    width: '100%',
+    height: '5%',
+    backgroundColor: '#0553',
+    margin:'auto',
+  },
+  titulo: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginTop:20,
+   textAlign:'center',
+   marginBottom:10,
+  },
+  subtitulo2: {
+    fontSize: 14,
+    fontWeight: 'bold',
+    marginTop:20,
+   textAlign:'center',
+   marginBottom:10,
+  },
+  texto: {
+    fontSize:16,
+     paddingBottom:25,
+     
+  },
+  subtitulo: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    marginTop:20,
+   textAlign:'center',
+   marginBottom:10,
+  },
+  
+    scrollView: {
+    marginHorizontal: 20,
+    
+  },
+
+});

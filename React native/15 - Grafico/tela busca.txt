@@ -1,0 +1,115 @@
+import React from "react";
+import { SafeAreaView, StyleSheet, ScrollView, View, Button, Alert, Dimensions } from "react-native";
+import { BarChart } from "react-native-chart-kit";
+import { Table, Row, Rows } from 'react-native-table-component';
+
+const screenWidth = Dimensions.get("window").width;
+
+const data = {
+  labels: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'], // Labels for your data
+  datasets: [
+    {
+      data: [100, 59, 80, 81, 56, 55, 40], // Data for the bars
+      color: (opacity = 1) => `rgba(253, 1, 6, ${opacity})`, // Color for the bars
+      strokeWidth: 2 // Width of the bar borders
+    }
+  ],
+  barPercentage: 0.5 // Bar width
+};
+
+const tableData = {
+  tableHead: ['NOME', 'CURSO', 'HORÁRIO', 'DATA'],
+  tableData: [
+    ['André Meneses', 'Nutrição', '00:51', '02/09/2024'],
+    ['Takamasa Nomuro', 'T.I.', '00:51', '02/09/2024'],
+    ['André Meneses', 'Nutrição', '00:51', '02/09/2024'],
+    ['André Meneses', 'Nutrição', '00:51', '02/09/2024'],
+    ['André Meneses', 'Nutrição', '00:51', '02/09/2024'],
+    ],
+};
+
+const App = () => {
+  return (
+    <View style={styles.container}>
+      <ScrollView>
+        <SafeAreaView>
+          <View>
+            {/* Bar Chart */}
+            <BarChart
+              data={data}
+              width={screenWidth - 32}
+              height={220}
+              yAxisLabel=""
+              chartConfig={{
+                backgroundColor: "#e26a00",
+                backgroundGradientFrom: "#fff",
+                backgroundGradientTo: "#fff",
+                color: (opacity = 1) => `rgba(253, 1, 6, ${opacity})`,
+                labelColor: (opacity = 1) => `rgba(0, 0, 0, ${opacity})`,
+                barPercentage: 0.7,
+                decimalPlaces: 0
+              }}
+              style={styles.graph}
+            />
+
+            {/* Table */}
+            <View style={styles.tableContainer}>
+              <Table borderStyle={{ borderWidth: 2, borderColor: 'black' }}>
+                <Row data={tableData.tableHead} style={styles.head} textStyle={styles.headText} />
+                <Rows data={tableData.tableData} textStyle={styles.text} />
+              </Table>
+            </View>
+
+            <View style={styles.fixToText}>
+              <Button
+                title="Voltar"
+                onPress={() => Alert.alert("Left button pressed")}
+              />
+            </View>
+          </View>
+        </SafeAreaView>
+      </ScrollView>
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: '35%'
+  },
+  fixToText: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginTop: 30
+  },
+  graph: {
+    marginVertical: 8,
+    borderRadius: 16
+  },
+  tableContainer: {
+    marginTop: 20,
+    width: screenWidth - 32
+  },
+  head: {  
+    height: 44,  
+    backgroundColor: 'red'
+  },
+  headText: { 
+    fontSize: 20, 
+    fontWeight: 'bold', 
+    textAlign: 'center', 
+    color: 'white' 
+  },
+  text: { 
+    margin: 6, 
+    fontSize: 16, 
+    fontWeight: 'bold', 
+    textAlign: 'center' 
+  }
+});
+
+export default App;

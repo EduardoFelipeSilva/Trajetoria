@@ -1,0 +1,34 @@
+      //via cep;
+      import React, { useEffect, useState } from 'react';
+      import { FlatList, Text, View } from 'react-native';
+      
+      export default function App(){  
+        const [data, setData] = useState([]);
+      
+        const getClientes = async () => {
+           try {
+            const response = await fetch('https://apiloterias.com.br/app/v2/resultado?loteria=megasena&token=kJdfLjd38Jai2ek');
+            const json = await response.json();
+            //setData(json.categorias);
+            setData(json);
+          } catch (error) {
+            console.error(error);
+          } 
+        }
+      
+        useEffect(() => {
+          getClientes();
+        }, []);
+      
+        return (
+          <View style={{ flex: 1, padding: 24 }}>
+      
+          <Text>Nome do concurso: {data.nome}</Text>
+          <Text>Nº: {data.numero_concurso}</Text>
+          <Text>Data: {data.data_concurso}</Text>
+          <Text>Local que foi realizado: {data.local_realizacao}</Text>
+            
+          </View>
+        );
+      };
+      

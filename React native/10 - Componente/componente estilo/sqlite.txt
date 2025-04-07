@@ -1,0 +1,5 @@
+SQLite é uma biblioteca compacta que implementa um banco de dados SQL sem a necessidade de um servidor. Chamada de biblioteca portátil, ela utiliza SQL (Structured Query Language ou Linguagem de Consulta Estruturada) que, por sua vez, é uma linguagem de pesquisa declarativa padrão para banco de dados relacional.
+
+O SQLite é uma base de dados relacional de código aberto e que dispensa o uso de um servidor na sua atuação. Armazenando seus arquivos dentro de sua própria estrutura, ele é capaz de funcionar muito bem em aplicações diversas, principalmente, websites de tráfego médio e sistemas mobile.
+
+https://docs.expo.dev/versions/latest/sdk/sqlite/

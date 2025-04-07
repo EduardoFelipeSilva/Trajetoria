@@ -1,0 +1,5 @@
+Componentes permitem você dividir a UI em partes independentes, reutilizáveis, ou seja, trata cada parte da aplicação como um bloco isolado, livre de outras dependências externas. 
+
+Componentes são como funções JavaScript. 
+
+Eles aceitam entradas e retornam elementos React que descrevem o que deve aparecer na tela.
